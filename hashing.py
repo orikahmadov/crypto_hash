@@ -7,7 +7,7 @@ def main():
     parser = argparse.ArgumentParser(description="Hashing files and strings. Usage: python hashing.py -s string -a md5/sha1/sha256/sha512 -f file -o outputfile -v")
     parser.add_argument("-s", "--string", help="String to hash")
     parser.add_argument("-f", "--file", help="File to hash")
-    parser.add_argument("-a", "--algorithm", help="Algorithm to use: MD5, SHA1, SHA64, SHA128, SHA256, SHA512",default="md5")
+    parser.add_argument("-a", "--algorithm", help="Algorithm to use: MD5, SHA1, SHA64, SHA256, SHA512",default="md5")
     parser.add_argument("-v", "--verbose", help="Verbose output", action="store_true")
     parser.add_argument("-o", "--output", help="Output file")
     
