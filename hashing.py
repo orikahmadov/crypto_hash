@@ -22,8 +22,6 @@ def main():
             hash_string = hashlib.sha1(string.encode('utf-8')).hexdigest()
         elif args.algorithm == "sha64".lower():
             hash_string = hashlib.sha224(string.encode('utf-8')).hexdigest()
-        elif args.algorithm == "sha128".lower():
-            hash_string = hashlib.sha256(string.encode('utf-8')).hexdigest()
         elif args.algorithm == "sha256".lower():
             hash_string = hashlib.sha256(string.encode('utf-8')).hexdigest()
         elif args.algorithm == "sha512".lower():
@@ -47,8 +45,6 @@ def main():
             hash_file = hashlib.sha1(open(args.file, 'rb').read()).hexdigest() # Hash file
         elif args.algorithm == "sha64": # If algorithm is sha64
             hash_file = hashlib.sha224(open(args.file, 'rb').read()).hexdigest() # Hash file
-        elif args.algorithm == "sha128": # If algorithm is sha128
-            hash_file = hashlib.sha256(open(args.file, 'rb').read()).hexdigest() # Hash file
         elif args.algorithm == "sha256": # If algorithm is sha256
             hash_file = hashlib.sha256(open(args.file, 'rb').read()).hexdigest() # Hash file
         elif args.algorithm == "sha512": # If algorithm is sha512
